@@ -1,0 +1,36 @@
+{
+  "name": "setuphub-server",
+  "version": "1.0.0",
+  "description": "Share your Setups from Assetto Corsa and Assetto Corsa Competizione with your team.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FynniX/SetupHub.git"
+  },
+  "keywords": [
+    "assetto-corsa",
+    "assetto-corsa-competizione"
+  ],
+  "author": "Fynn Haupt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FynniX/SetupHub/issues"
+  },
+  "homepage": "https://github.com/FynniX/SetupHub#readme",
+  "dependencies": {
+    "argon2": "^0.28.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "multer": "^1.4.2",
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.0.2",
+    "typeorm": "^0.2.33"
+  }
+}

@@ -1,0 +1,233 @@
+@import "./theme.scss";
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background-color: $accent3;
+}
+
+.cars_container {
+  overflow-y: auto;
+  position: relative;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+.add_container {
+  margin: 20px auto;
+  padding: 10px 10px;
+  width: 90%;
+  border-radius: 10px;
+  background-color: $accent4;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  p {
+    text-align: left;
+    margin: 0 25px;
+    padding: 0;
+    font-family: $font-face;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+
+    &.error {
+      margin-top: 10px;
+      color: red;
+    }
+  }
+
+  .title {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row;
+
+    h6 {
+      margin: auto auto auto 0;
+      padding: 0 22.5px;
+      font-family: $font-face;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 20px;
+      color: $grey-1;
+    }
+
+    svg {
+      stroke: $grey-1;
+      stroke-width: 2px;
+      margin: auto 0 1px 15px;
+    }
+  }
+
+  label {
+    padding: 0 21px;
+    font-family: $font-face;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: $accent;
+  }
+
+  input, select {
+    margin: 0 20px 7.5px;
+    padding: 12.5px 20px;
+    outline: none;
+    border: 1px solid #e1e2eb;
+    border-radius: 5px;
+    color: #131222;
+    caret-color: #131222;
+    font-family: $font-face;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px 0 rgba(206, 209, 224, .2);
+
+    &::placeholder {
+      color: #E0E0E0;
+    }
+
+    option {
+      color: #131222;
+    }
+  }
+
+  textarea {
+    height: 250px;
+    margin: 7.5px 20px;
+    padding: 12.5px 20px;
+    resize: vertical;
+    outline: none;
+    border: 1px solid #e1e2eb;
+    border-radius: 5px;
+    color: #131222;
+    caret-color: #131222;
+    font-family: $font-face;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px 0 rgba(206, 209, 224, .2);
+
+    &::placeholder {
+      color: #E0E0E0;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    margin: 10px auto 0 22.5px;
+    padding: 7.5px 40px;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    font-family: $font-face;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: $accent;
+    color: $accent3;
+    box-shadow: inset 0 2px 4px 0 rgba(206, 209, 224, .2);
+
+    &:hover {
+      transition: .5s;
+      background-color: $accent3;
+      color: $accent;
+    }
+  }
+}
+
+.car_container {
+  position: relative;
+  margin: 20px auto;
+  padding: 10px 10px;
+  width: 90%;
+  border-radius: 10px;
+  background-color: $accent4;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  .splitter {
+    margin: 5px auto;
+    width: 99%;
+    height: 1px;
+    background-color: rgba(red($grey-1), green($grey-1), blue($grey-1), 0.15);
+  }
+
+  .title {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: row;
+
+    h6 {
+      margin: auto auto auto 0;
+      padding: 0 7.5px;
+      font-family: $font-face;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 18px;
+      color: $grey-1;
+    }
+
+    svg {
+      stroke: $grey-1;
+      stroke-width: 2px;
+      margin: auto 0 1px 15px;
+    }
+  }
+
+  .info {
+    margin: 7.5px 10px;
+    font-family: $font-face;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: $grey-2;
+
+    display: flex;
+    align-content: center;
+
+    svg {
+      margin: auto 5px;
+
+      &:hover {
+        cursor: pointer;
+        transition: .5s;
+        stroke: $accent;
+      }
+    }
+  }
+
+  .remove {
+    cursor: pointer;
+    margin: 7.5px 10px;
+    font-family: $font-face;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    outline: none;
+    border: none;
+    color: $grey-2;
+    background-color: transparent;
+    display: flex;
+    align-content: center;
+
+    svg {
+      margin: auto 5px;
+    }
+
+    &:hover {
+      transition: .5s;
+      color: $accent;
+
+      svg {
+        transition: .5s;
+        stroke: $accent;
+      }
+    }
+  }
+}

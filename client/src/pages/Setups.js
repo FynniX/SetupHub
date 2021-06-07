@@ -188,7 +188,7 @@ class Setups extends React.Component {
 
         let path = localStorage.getItem(obj_game.shorthand)
 
-        if(path !== undefined) {
+        if(path !== undefined && path !== null && path !== "") {
             if(path.charAt(path.length - 1) !== "/")
                 path = path + "/"
 

@@ -109,8 +109,13 @@ class Settings extends React.Component {
 
                     <label htmlFor="">Path to Documents Folder</label>
                     <input type="text" value={this.state[value.shorthand]} onChange={e => {
+                        let value1 = e.target.value;
+
+                        if(value1.includes("\\"))
+                            value1 = value1.split("\\").join("/")
+
                         this.setState({
-                            [value.shorthand]: e.target.value
+                            [value.shorthand]: value1
                         })
                     }} placeholder="e.g. C:/Users/User/Documents/Assetto Corsa Competizione/Setups"/>
                 </div>

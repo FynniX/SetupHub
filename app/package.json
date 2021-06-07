@@ -1,6 +1,6 @@
 {
   "name": "setuphub-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Share your Setups from Assetto Corsa and Assetto Corsa Competizione with your team.",
   "main": "src/main.js",
   "scripts": {
@@ -52,7 +52,7 @@
         "packageManager": "npm",
         "icon": "src/favicon",
         "executableName": "SetupHub",
-        "win32metadata":{
+        "win32metadata": {
           "ProductName": "SetupHub",
           "CompanyName": "Fynn Haupt"
         }
@@ -61,7 +61,7 @@
         "title": "SetupHub",
         "name": "SetupHub",
         "exe": "SetupHub.exe",
-        "setupExe": "SetupHub-Installer-1.0.0.exe",
+        "setupExe": "SetupHub-Installer-1.0.1.exe",
         "description": "Share your Setups from Assetto Corsa and Assetto Corsa Competizione with your team.",
         "iconUrl": "file://src/favicon.ico",
         "setupIcon": "src/favicon.ico"
@@ -73,7 +73,7 @@
         "name": "https://github.com/FynniX/SetupHub"
       },
       "windowsStoreConfig": {
-        "packageName": "",
+        "packageName": "setuphub",
         "name": "setuphub"
       }
     }

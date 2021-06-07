@@ -1,0 +1,81 @@
+{
+  "name": "setuphub-app",
+  "version": "1.0.0",
+  "description": "Share your Setups from Assetto Corsa and Assetto Corsa Competizione with your team.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make64": "electron-forge make",
+    "make32": "electron-forge make --arch ia32"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FynniX/SetupHub.git"
+  },
+  "keywords": [
+    "assetto-corsa",
+    "assetto-corsa-competizione"
+  ],
+  "author": "Fynn Haupt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FynniX/SetupHub/issues"
+  },
+  "homepage": "https://github.com/FynniX/SetupHub#readme",
+  "dependencies": {
+    "electron-compile": "^6.4.4",
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "electron-forge": "^5.2.4",
+    "electron-prebuilt-compile": "8.2.0"
+  },
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "npm",
+        "icon": "src/favicon",
+        "executableName": "SetupHub",
+        "win32metadata":{
+          "ProductName": "SetupHub",
+          "CompanyName": "Fynn Haupt"
+        }
+      },
+      "electronWinstallerConfig": {
+        "title": "SetupHub",
+        "name": "SetupHub",
+        "exe": "SetupHub.exe",
+        "setupExe": "SetupHub-Installer-1.0.0.exe",
+        "description": "Share your Setups from Assetto Corsa and Assetto Corsa Competizione with your team.",
+        "iconUrl": "file://src/favicon.ico",
+        "setupIcon": "src/favicon.ico"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "FynniX",
+        "name": "https://github.com/FynniX/SetupHub"
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "setuphub"
+      }
+    }
+  }
+}
